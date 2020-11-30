@@ -1,0 +1,30 @@
+{
+  "name": "video-chat-server",
+  "version": "0.1.0",
+  "description": "Server for React video chat client",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "format:schema": "npx prisma format",
+    "start": "nodemon server.js",
+    "migrate": "npx prisma migrate save --name init --experimental",
+    "apply:migration": "npx prisma migrate up --experimental",
+    "reset": "npx prisma migrate down --experimental",
+    "seed": "node prisma/seed/index.js",
+    "admin": "npx prisma studio --experimental",
+    "prisma:generate": "npx prisma generate",
+    "prepare:db": "npm-run-all format:schema migrate apply:migration prisma:generate"
+  },
+  "dependencies": {
+    "@prisma/client": "^2.9.0",
+    "awake-heroku": "^1.0.17",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0",
+    "username-generator": "^1.1.0"
+  },
+  "devDependencies": {
+    "@prisma/cli": "^2.9.0",
+    "npm-run-all": "^4.1.5"
+  }
+}

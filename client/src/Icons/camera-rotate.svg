@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="602" width="802" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1">
+   <g id="svg_2">
+    <g stroke="null" id="svg_5">
+     <path stroke="null" id="svg_6" fill="#26c6da" class="active-path" d="m425.73143,181.35887l-48.73143,44.25143l0,66.46857l48.73143,44.25143c3.74857,3.38286 9.52686,3.09029 12.90971,-0.65829c1.49029,-1.65486 2.33143,-3.78514 2.35886,-6.016l0,-141.53143c-0.00914,-5.04686 -4.11429,-9.13371 -9.16114,-9.12457c-2.25829,0.00914 -4.43429,0.85029 -6.10743,2.35886z"/>
+    </g>
+    <path stroke="null" id="svg_7" fill="#26C6DA" class="active-path" d="m310.56522,140l-174.13044,0c-25.64361,0 -46.43478,20.79117 -46.43478,46.43478l0,139.30435c0,25.64361 20.79117,46.43479 46.43478,46.43479l174.13044,0c25.64361,0 46.43479,-20.79118 46.43479,-46.43479l0,-139.30435c0,-25.64361 -20.79118,-46.43478 -46.43479,-46.43478z"/>
+    <ellipse ry="225.5" rx="225.5" id="svg_15" cy="256" cx="256" stroke-width="15" stroke="#26c6da" fill="none"/>
+    <line transform="rotate(19.115724563598633 90.9999999999999,75.93750000000003) " stroke-linecap="null" stroke-linejoin="null" id="svg_18" y2="120.4375" x2="91.5" y1="31.4375" x1="90.5" stroke-width="15" stroke="#26c6da" fill="none"/>
+    <line transform="rotate(19.115724563598633 414.9999999999998,442.9375000000001) " stroke-linecap="null" stroke-linejoin="null" id="svg_17" y2="487.4375" x2="415.5" y1="398.4375" x1="414.5" stroke-width="15" stroke="#26c6da" fill="none"/>
+    <line transform="rotate(75.78582000732422 124.99999999999999,101.93750000000001) " stroke-linecap="null" stroke-linejoin="null" id="svg_19" y2="146.4375" x2="125.5" y1="57.4375" x1="124.5" stroke-width="15" stroke="#26c6da" fill="none"/>
+    <line stroke="#26c6da" transform="rotate(85.22235107421875 381,407.9375) " stroke-linecap="null" stroke-linejoin="null" id="svg_16" y2="451.43875" x2="381.45004" y1="364.43625" x1="380.54996" stroke-width="15" fill="none"/>
+   </g>
+  </g>
+ </g>
+</svg>

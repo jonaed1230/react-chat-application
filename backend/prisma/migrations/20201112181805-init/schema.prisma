@@ -1,0 +1,47 @@
+datasource db {
+  provider = "postgresql"
+  url = "***"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id         String  @id @default(cuid())
+  email      String  @unique
+  name       String
+  studentId  Int?
+  department String
+  active     Boolean @default(false)
+  chats      Chat[]
+  classes    Class[]
+  role       Role
+  Class      Class[] @relation("Class_To_Author")
+}
+
+model Class {
+  id           String  @id @default(cuid())
+  started      Boolean
+  valid        Boolean @default(true)
+  chatlist     Chat[]
+  author       User    @relation("Class_To_Author", fields: [authorId], references: [id])
+  authorId     String
+  perticipents User[]
+}
+
+model Chat {
+  id       String @id @default(cuid())
+  author   User   @relation(fields: [authorId], references: [id])
+  authorId String
+  class    Class  @relation(fields: [classId], references: [id])
+  classId  String
+  text     String
+}
+
+enum Role {
+  ADMIN
+  TEACHER
+  STUDENT
+  MODERATOR
+}
